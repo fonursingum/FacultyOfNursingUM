@@ -123,6 +123,17 @@ assets/
   3. Home page explore-grid — currently shows About / Vision & Mission / History / News & Events. Consider adding a "Departments" card.
   4. Cross-links inside `department/*.html` correctly point at `../study/*.html` and are already live once Department is re-linked.
   5. Bump `?v=N` cache-buster on all HTML files.
+- **The Star article page: REMOVED but restorable** (2026-07-12, commit `14ee048`). User asked to delete it but wants the option to bring it back later. What was removed:
+  1. **File:** `others/news/um-establishes-faculty-of-nursing.html` — full article page with hero, banner-8 featured image, VC quote, link to The Star.
+  2. **Image:** `assets/banners/banner-8.jpg` — the "Good News: UM Establishes Faculty of Nursing" banner featuring Prof. Dr. Hasniza Hashim (Vice-Chancellor) in red, with the Star article URL.
+  3. **Hero carousel slide** on `index.html` — previously slide 2, using banner-8.
+  4. **Home news card** on `index.html` — 27 March 2026 slot; currently replaced by the "Announcement — Establishment of the Faculty of Nursing" card (banner-4). Restore path: put the Star card back and either replace the current Announcement card or extend the news grid.
+  5. **News list card** on `others/news.html` — 27 March 2026 card was the first entry in the grid; simply removed.
+  6. **Star article URL:** https://www.thestar.com.my/news/nation/2026/03/27/um-sets-up-dedicated-faculty-to-address-shortage-of-nurses
+  7. **Original banner-8 PNG** is likely still at `/Users/tigerlab/Downloads/Nursing Website Banner/8.png` on the user's machine — if not, request a fresh export. To regenerate the compressed JPG: `sips -Z 1920 -s format jpeg -s formatOptions 82 "/path/to/8.png" --out assets/banners/banner-8.jpg`.
+
+  **To restore:** `git show 4a821a3:others/news/um-establishes-faculty-of-nursing.html > others/news/um-establishes-faculty-of-nursing.html`, then recover banner-8.jpg, then restore the three linking spots (hero carousel, home news card, news.html card) — check commit `4a821a3` for the exact HTML.
+
 - **Events on the home page: fully HIDDEN via HTML comment wrapper** (2026-07-12). In `index.html` the entire "Upcoming events" `<section>` sits inside `<!-- HIDE-EVENTS-START ... HIDE-EVENTS-END -->` so the browser doesn't render it. The content is preserved verbatim. **To restore:** open `index.html`, delete the two lines that contain `HIDE-EVENTS-START` and `HIDE-EVENTS-END` (they wrap the section). Bump `?v=N` cache-buster.
 - **Events page (`others/events.html`)** still shows a single "Coming soon" tile with a mailto CTA. When real events exist, restore the 3-card grid pattern using the `.card-grid` layout with each card being an `<a class="news-card">` — use the news cards on `others/news.html` as a template. Bump `?v=N`.
 - The 3 later news items on `others/news.html` are illustrative to fill out the grid; the top three (Dean Dialogue, The Star coverage, Establishment letter) are real. Each of the 7 news items has a dedicated detail page under `others/news/`.
