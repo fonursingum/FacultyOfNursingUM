@@ -1,207 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty of Nursing | Universiti Malaya</title>
-     <link rel="icon" type="image/png" href="logo_um.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        umblue: '#002366',
-                        umgold: '#FBBF24',
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .hero-bg {
-            background-image: linear-gradient(rgba(0, 35, 102, 0.85), rgba(0, 35, 102, 0.75)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | Faculty of Nursing, Universiti Malaya</title>
+<meta name="description" content="The Faculty of Nursing, Universiti Malaya — a global center of excellence in nursing scholarship, established March 2026.">
+<link rel="icon" type="image/png" href="assets/logo_um.png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
 </head>
-<body class="font-sans text-gray-800 antialiased bg-gray-50">
+<body>
+<div id="site-nav"></div>
 
-    <!-- Navigation -->
-    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-24 sm:h-28">
-                <div class="flex items-center">
-                    <!-- Official Image Logo -->
-                    <a href="#home" class="flex items-center py-2 transition hover:opacity-90">
-                        <img src="logo.jpeg" alt="Faculty of Nursing Universiti Malaya Logo" class="h-20 sm:h-24 w-auto object-contain">
-                    </a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-600 hover:text-umblue font-medium transition">Home</a>
-                    <a href="#about" class="text-gray-600 hover:text-umblue font-medium transition">About Us</a>
-                    <a href="#vision" class="text-gray-600 hover:text-umblue font-medium transition">Vision & Mission</a>
-                    <a href="#social" class="text-gray-600 hover:text-umblue font-medium transition">Connect</a>
-                    <a href="#contact" class="bg-umblue text-white px-5 py-2 rounded-md font-medium hover:bg-blue-900 transition">Apply Now</a>
-                </div>
-            </div>
+<!-- ============================== -->
+<!-- HERO CAROUSEL -->
+<!-- ============================== -->
+<section class="hero" aria-label="Featured banners">
+  <div class="hero-track">
+    <div class="hero-slide"><img src="assets/banners/banner-1.jpg" alt="Introducing Fakulti Kejururawatan — Faculty of Nursing"></div>
+    <div class="hero-slide"><img src="assets/banners/banner-8.jpg" alt="Good News — Universiti Malaya establishes Faculty of Nursing"></div>
+    <div class="hero-slide"><img src="assets/banners/banner-4.jpg" alt="Announcement — Establishment of the Faculty of Nursing"></div>
+    <div class="hero-slide"><img src="assets/banners/banner-5.jpg" alt="Our Promise — Caring today, leading tomorrow"></div>
+    <div class="hero-slide"><img src="assets/banners/banner-7.jpg" alt="Vision — Our Aspiration"></div>
+    <div class="hero-slide"><img src="assets/banners/banner-6.jpg" alt="Mission — Our Commitment"></div>
+    <div class="hero-slide"><img src="assets/banners/banner-2.jpg" alt="Rooted in Knowledge, Empowering Care, United as One"></div>
+    <div class="hero-slide"><img src="assets/banners/banner-3.jpg" alt="A new identity. A stronger future."></div>
+  </div>
+  <button class="hero-arrow prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="hero-arrow next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="hero-dots" aria-hidden="true"></div>
+</section>
+
+<!-- ============================== -->
+<!-- WELCOME BAR -->
+<!-- ============================== -->
+<section style="background:linear-gradient(135deg,var(--paper) 0%, var(--white) 100%); padding:36px 0; border-bottom:1px solid var(--line);">
+  <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+    <div style="display:flex; align-items:center; gap:22px;">
+      <div style="width:60px; height:60px; border-radius:50%; background:var(--um-blue); display:grid; place-items:center; color:var(--um-gold); font-size:24px; box-shadow:0 8px 24px rgba(0,35,102,.2);">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+      </div>
+      <div>
+        <div class="eyebrow" style="border:none; padding:0;">Welcome to the Faculty of Nursing</div>
+        <div class="font-serif" style="font-size:22px; color:var(--um-blue); margin-top:4px;">
+          <span style="font-style:italic;">Caring today,</span> <span style="color:var(--um-gold-2); font-weight:600;">leading tomorrow.</span>
         </div>
-    </nav>
+      </div>
+    </div>
+    <div>
+      <a href="about/index.html" class="btn-primary"><i class="fa-solid fa-arrow-right-long"></i> Discover Our Faculty</a>
+    </div>
+  </div>
+</section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg h-screen flex items-center mt-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
-                <span class="text-umgold font-bold tracking-wider uppercase text-sm mb-4 block">Universiti Malaya</span>            
-                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-                Caring today,<br> <span class="text-umgold">leading tomorrow.</span>
-            </h1>
-            <p class="mt-4 text-xl text-gray-200 max-w-2xl mb-10">
-                Newly established in March 2026, the Faculty of Nursing is dedicated to addressing the nation's healthcare needs through world-class education, research, and clinical excellence.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 md:justify-start justify-center">
-                <a href="#about" class="bg-umgold text-umblue font-bold px-8 py-3 rounded-md hover:bg-yellow-300 transition shadow-lg text-center">Discover Our Faculty</a>
-                <a href="https://www.thestar.com.my/news/nation/2026/03/27/um-sets-up-dedicated-faculty-to-address-shortage-of-nurses" target="_blank" class="bg-transparent border-2 border-white text-white font-bold px-8 py-3 rounded-md hover:bg-white hover:text-umblue transition text-center">
-                    <i class="fa-regular fa-newspaper mr-2"></i>Read the News
-                </a>
-            </div>
+<!-- ============================== -->
+<!-- EXPLORE — 4-card grid -->
+<!-- ============================== -->
+<section class="section" style="background:var(--paper);">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Explore</span>
+      <h2 class="h-display">The Faculty of <span class="accent">Nursing</span></h2>
+      <p>Discover programmes, research, departments and community — a growing academic home for Malaysia's future nurses.</p>
+    </div>
+    <div class="explore-grid reveal">
+      <a class="explore-card" href="study/undergraduate.html">
+        <div class="explore-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>Undergraduate</h3>
+        <p>Bachelor of Nursing Science with immersive clinical training from year one.</p>
+        <div class="arrow">Explore <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+      <a class="explore-card" href="study/postgraduate.html">
+        <div class="explore-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+        <h3>Postgraduate</h3>
+        <p>Masters &amp; PhD pathways in advanced practice, education and research.</p>
+        <div class="arrow">Explore <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+      <a class="explore-card" href="department/index.html">
+        <div class="explore-icon"><i class="fa-solid fa-hospital-user"></i></div>
+        <h3>Departments</h3>
+        <p>Clinical and community departments driving teaching, research and service.</p>
+        <div class="arrow">Explore <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+      <a class="explore-card" href="about/index.html">
+        <div class="explore-icon"><i class="fa-solid fa-people-group"></i></div>
+        <h3>About Us</h3>
+        <p>Leadership, vision, and the story behind Malaysia's newest nursing faculty.</p>
+        <div class="arrow">Explore <i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- INTRO / ESTABLISHMENT -->
+<!-- ============================== -->
+<section class="section">
+  <div class="container" style="display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+    <div class="reveal">
+      <span class="eyebrow">Our Inception</span>
+      <h2 class="h-display">A milestone for<br><span class="accent">Malaysian nursing.</span></h2>
+      <p style="color:var(--ink-muted); font-size:17px; line-height:1.8;">
+        Officially established by the Universiti Malaya Senate and Board of Directors on
+        <strong style="color:var(--um-blue)">6 March 2026</strong>, the
+        <em>Fakulti Kejururawatan</em> represents a decisive strengthening of nursing academia in Malaysia.
+      </p>
+      <p style="color:var(--ink-muted); font-size:17px; line-height:1.8; margin-top:12px;">
+        Created as a strategic response to the national shortage of nurses, the Faculty is dedicated to
+        world-class education, translational research and clinical excellence.
+      </p>
+      <blockquote style="border-left:4px solid var(--um-gold); background:var(--paper); padding:20px 24px; margin:24px 0 0; border-radius:0 12px 12px 0; font-family:'Cormorant Garamond',serif; font-style:italic; color:var(--um-blue); font-size:18px; line-height:1.6;">
+        "The establishment of the Faculty of Nursing at Universiti Malaya is a strategic step to strengthen
+        the nursing profession and produce highly-skilled, compassionate and future-ready nursing leaders for
+        the nation."
+        <div style="margin-top:12px; font-family:'Inter',sans-serif; font-style:normal; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--um-gold-2); font-weight:600;">— Prof. Dr. Hasniza Hashim, Vice-Chancellor</div>
+      </blockquote>
+      <div style="margin-top:26px; display:flex; gap:14px; flex-wrap:wrap;">
+        <a class="btn-primary" href="about/history.html"><i class="fa-solid fa-clock-rotate-left"></i> Read Our History</a>
+        <a class="btn-gold" href="about/vision-mission.html"><i class="fa-solid fa-eye"></i> Vision &amp; Mission</a>
+      </div>
+    </div>
+    <div class="reveal" style="position:relative;">
+      <img src="assets/banners/banner-4.jpg" alt="Announcement — Establishment of the Faculty of Nursing" style="width:100%; border-radius:20px; box-shadow:0 24px 60px rgba(0,35,102,.15);">
+      <div style="position:absolute; bottom:-24px; left:-24px; background:var(--um-blue); color:var(--white); padding:22px 26px; border-radius:16px; box-shadow:0 18px 40px rgba(0,35,102,.3); border-top:4px solid var(--um-gold);">
+        <div style="font-family:'Cormorant Garamond',serif; font-size:34px; font-weight:600; color:var(--um-gold); line-height:1;">2026</div>
+        <div style="font-size:12px; letter-spacing:.12em; text-transform:uppercase; margin-top:4px;">Year of Establishment</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- COMMUNITY TILES -->
+<!-- ============================== -->
+<section class="section" style="background:var(--paper);">
+  <div class="container">
+    <div class="section-title reveal">
+      <span class="eyebrow">Our Community</span>
+      <h2 class="h-display">Together, <span class="accent">stronger.</span></h2>
+      <p>Students, educators, alumni and clinical partners forming a caring, learning community.</p>
+    </div>
+    <div class="community-grid reveal">
+      <a class="community-tile" href="study/undergraduate.html" style="background-image:linear-gradient(rgba(0,35,102,.3),rgba(0,35,102,.85)),url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=70'); background-size:cover; background-position:center;">
+        <div><span>Students</span><h4>Nursing Students</h4></div>
+      </a>
+      <a class="community-tile" href="about/meet-our-team.html" style="background-image:linear-gradient(rgba(0,35,102,.3),rgba(0,35,102,.85)),url('https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?auto=format&fit=crop&w=800&q=70'); background-size:cover; background-position:center;">
+        <div><span>Faculty</span><h4>Our Educators</h4></div>
+      </a>
+      <a class="community-tile" href="department/index.html" style="background-image:linear-gradient(rgba(0,35,102,.3),rgba(0,35,102,.85)),url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=70'); background-size:cover; background-position:center;">
+        <div><span>Clinical</span><h4>Clinical Partners</h4></div>
+      </a>
+      <a class="community-tile" href="others/events.html" style="background-image:linear-gradient(rgba(0,35,102,.3),rgba(0,35,102,.85)),url('https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=70'); background-size:cover; background-position:center;">
+        <div><span>Alumni</span><h4>Our Alumni</h4></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- LATEST NEWS -->
+<!-- ============================== -->
+<section class="section">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:44px; flex-wrap:wrap; gap:16px;" class="reveal">
+      <div>
+        <span class="eyebrow">Newsroom</span>
+        <h2 class="h-display" style="margin-bottom:0;">Latest <span class="accent">news.</span></h2>
+      </div>
+      <a href="others/news.html" class="btn-primary">All News <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="card-grid reveal">
+      <a class="news-card" href="others/news.html">
+        <div class="thumb"><img src="assets/leadership-dialogue.jpeg" alt="Leadership Dialogue for Dean Selection"></div>
+        <div class="body">
+          <div class="date">6 July 2026</div>
+          <h3>Leadership Dialogue for the Dean Selection Exercise</h3>
+          <p>Esteemed candidates share their vision for the future of nursing at Universiti Malaya, moderated by the Registrar.</p>
+          <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
         </div>
-    </section>
-
-    <!-- About Section / Announcement -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl font-bold text-umblue mb-6 border-l-4 border-umgold pl-4">Our Inception</h2>
-                    <p class="text-gray-600 mb-4 leading-relaxed">
-                        Officially established by the Universiti Malaya Senate and Board of Directors on <strong>March 6, 2026</strong>, the <em>Fakulti Kejururawatan</em> (Faculty of Nursing) represents a major milestone in strengthening nursing academic development in Malaysia.
-                    </p>
-                    <p class="text-gray-600 mb-6 leading-relaxed">
-                        Created as a strategic and dedicated initiative to address the critical shortage of nurses, the faculty aims to elevate the nursing profession through rigorous academic and clinical training.
-                    </p>
-                    <div class="bg-blue-50 p-6 rounded-lg border border-blue-100">
-                        <div class="flex items-start">
-                            <i class="fa-solid fa-quote-left text-umgold text-2xl mr-4 mt-1"></i>
-                            <p class="italic text-gray-700 font-medium">
-                                "Menyambut baik inisiatif penubuhan Fakulti Kejururawatan sebagai sebahagian daripada usaha Universiti memperkukuh pembangunan akademik dalam bidang kejururawatan."
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Nursing Education" class="rounded-lg shadow-xl object-cover h-96 w-full">
-                    <div class="absolute -bottom-6 -left-6 bg-umblue text-white p-6 rounded-lg shadow-lg">
-                        <p class="font-bold text-2xl text-umgold mb-1">2026</p>
-                        <p class="text-sm">Year of Establishment</p>
-                    </div>
-                </div>
-            </div>
+      </a>
+      <a class="news-card" href="others/news.html">
+        <div class="thumb"><img src="assets/banners/banner-8.jpg" alt="UM sets up dedicated nursing faculty"></div>
+        <div class="body">
+          <div class="date">27 March 2026</div>
+          <h3>UM sets up dedicated Faculty to address shortage of nurses</h3>
+          <p>Universiti Malaya takes a significant step forward in strengthening education and the development of nursing.</p>
+          <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
         </div>
-    </section>
-
-    <!-- Vision & Mission Section -->
-    <section id="vision" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-            <h2 class="text-3xl font-bold text-umblue mb-4">Strategic Direction</h2>
-            <div class="w-24 h-1 bg-umgold mx-auto"></div>
+      </a>
+      <a class="news-card" href="others/news.html">
+        <div class="thumb"><img src="assets/surat-kelulusan.jpeg" alt="Establishment letter"></div>
+        <div class="body">
+          <div class="date">9 March 2026</div>
+          <h3>Official establishment letter issued</h3>
+          <p>The Registrar's office issues the formal notification of the Faculty's establishment, effective 6 March 2026.</p>
+          <span class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></span>
         </div>
-        
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                
-                <!-- Vision Card -->
-                <div class="bg-white rounded-xl shadow-lg p-10 transform transition duration-300 hover:-translate-y-2 border-t-4 border-umblue">
-                    <div class="text-umblue text-5xl mb-6">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 uppercase tracking-wide">Vision FON</h3>
-                    <p class="text-gray-600 text-lg leading-relaxed font-medium">
-                        A global center of excellence in nursing scholarship, impacting healthcare delivery and society.
-                    </p>
-                </div>
+      </a>
+    </div>
+  </div>
+</section>
 
-                <!-- Mission Card -->
-                <div class="bg-white rounded-xl shadow-lg p-10 transform transition duration-300 hover:-translate-y-2 border-t-4 border-umgold">
-                    <div class="text-umgold text-5xl mb-6">
-                        <i class="fa-solid fa-bullseye"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-800 mb-4 uppercase tracking-wide">Mission FON</h3>
-                    <p class="text-gray-600 text-lg leading-relaxed font-medium">
-                        To advance the art and science of nursing by nurturing visionary leaders and clinical experts through transformative education, impactful research, and clinical excellence in a diverse and dynamic global environment.
-                    </p>
-                </div>
-            </div>
+<!-- ============================== -->
+<!-- UPCOMING EVENTS -->
+<!-- ============================== -->
+<section class="section" style="background:var(--paper);">
+  <div class="container">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:44px; flex-wrap:wrap; gap:16px;" class="reveal">
+      <div>
+        <span class="eyebrow">What's on</span>
+        <h2 class="h-display" style="margin-bottom:0;">Upcoming <span class="accent">events.</span></h2>
+      </div>
+      <a href="others/events.html" class="btn-primary">All Events <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <div class="card-grid reveal">
+      <a class="news-card" href="others/events.html">
+        <div class="thumb" style="background:linear-gradient(135deg,var(--um-blue),var(--um-blue-3)); position:relative;">
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--um-gold);">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:600; line-height:1;">18</div>
+            <div style="font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--white);">Aug 2026</div>
+          </div>
         </div>
-    </section>
-
-    <!-- Connect & Social Media Section -->
-    <section id="social" class="py-20 bg-umblue text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold mb-4">Stay Connected</h2>
-            <p class="text-gray-300 mb-10 max-w-2xl mx-auto">Follow the Faculty of Nursing on our official social media channels for the latest updates, student life, and announcements.</p>
-            
-            <div class="flex flex-wrap justify-center gap-6">
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/share/15xqKU3GeZ4/?mibextid=wwXIfr" target="_blank" class="flex flex-col items-center justify-center bg-white bg-opacity-10 w-32 h-32 rounded-full hover:bg-umgold hover:text-umblue transition duration-300">
-                    <i class="fa-brands fa-facebook-f text-4xl mb-2"></i>
-                    <span class="text-sm font-semibold">Facebook</span>
-                </a>
-                
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/fonursingum?utm_source=qr" target="_blank" class="flex flex-col items-center justify-center bg-white bg-opacity-10 w-32 h-32 rounded-full hover:bg-umgold hover:text-umblue transition duration-300">
-                    <i class="fa-brands fa-instagram text-4xl mb-2"></i>
-                    <span class="text-sm font-semibold">Instagram</span>
-                </a>
-
-                <!-- TikTok -->
-                <a href="https://vt.tiktok.com/ZSCnw5p7K/" target="_blank" class="flex flex-col items-center justify-center bg-white bg-opacity-10 w-32 h-32 rounded-full hover:bg-umgold hover:text-umblue transition duration-300">
-                    <i class="fa-brands fa-tiktok text-4xl mb-2"></i>
-                    <span class="text-sm font-semibold">TikTok</span>
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/faculty-of-nursing-um-695563420?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="flex flex-col items-center justify-center bg-white bg-opacity-10 w-32 h-32 rounded-full hover:bg-umgold hover:text-umblue transition duration-300">
-                    <i class="fa-brands fa-linkedin-in text-4xl mb-2"></i>
-                    <span class="text-sm font-semibold">LinkedIn</span>
-                </a>
-            </div>
+        <div class="body">
+          <div class="date"><i class="fa-regular fa-clock"></i> 09:00 · Faculty Meeting Room</div>
+          <h3>Inaugural Faculty Town Hall</h3>
+          <p>Vice-Chancellor's address and Q&amp;A with the founding academic team.</p>
+          <span class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></span>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-                <h4 class="text-white text-lg font-bold mb-4">Faculty of Nursing</h4>
-                <p class="mb-4">Universiti Malaya<br>50603 Kuala Lumpur<br>Malaysia</p>
-                <p class="text-umgold font-semibold italic">"Caring today, leading tomorrow"</p>
-            </div>
-            <div>
-                <h4 class="text-white text-lg font-bold mb-4">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#home" class="hover:text-white transition">Home</a></li>
-                    <li><a href="#about" class="hover:text-white transition">About Us</a></li>
-                    <li><a href="#vision" class="hover:text-white transition">Vision & Mission</a></li>
-                    <li><a href="https://www.thestar.com.my/news/nation/2026/03/27/um-sets-up-dedicated-faculty-to-address-shortage-of-nurses" target="_blank" class="hover:text-white transition">News & Media</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white text-lg font-bold mb-4">Enquiries</h4>
-                <p class="mb-2"><i class="fa-solid fa-envelope mr-2"></i> nursing@um.edu.my (Example)</p>
-                <p><i class="fa-solid fa-phone mr-2"></i> +603 7967 XXXX</p>
-            </div>
+      </a>
+      <a class="news-card" href="others/events.html">
+        <div class="thumb" style="background:linear-gradient(135deg,var(--um-gold-2),var(--um-gold)); position:relative;">
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--um-blue);">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:600; line-height:1;">05</div>
+            <div style="font-size:14px; letter-spacing:.14em; text-transform:uppercase;">Sep 2026</div>
+          </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-sm">
-            <p>&copy; 2026 Faculty of Nursing, Universiti Malaya. All rights reserved.</p>
+        <div class="body">
+          <div class="date"><i class="fa-regular fa-clock"></i> 14:00 · UM Auditorium</div>
+          <h3>Nursing Research Symposium 2026</h3>
+          <p>Frontiers in nursing scholarship — panels, poster sessions and keynote talks.</p>
+          <span class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></span>
         </div>
-    </footer>
+      </a>
+      <a class="news-card" href="others/events.html">
+        <div class="thumb" style="background:linear-gradient(135deg,#0a4d55,#0f7d87); position:relative;">
+          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--um-gold-soft);">
+            <div style="font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:600; line-height:1;">12</div>
+            <div style="font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--white);">Oct 2026</div>
+          </div>
+        </div>
+        <div class="body">
+          <div class="date"><i class="fa-regular fa-clock"></i> 08:30 · Kuala Lumpur</div>
+          <h3>Clinical Skills Bootcamp</h3>
+          <p>Hands-on simulation training led by senior clinical educators.</p>
+          <span class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
 
+<!-- ============================== -->
+<!-- RIBBON — Caring today -->
+<!-- ============================== -->
+<section class="ribbon section-sm">
+  <div class="container" style="display:grid; grid-template-columns:1fr auto; gap:32px; align-items:center;">
+    <div>
+      <div style="font-family:'Great Vibes', cursive; color:var(--um-gold); font-size:34px; margin-bottom:6px;">Our promise</div>
+      <h2 class="h-display" style="color:var(--white); margin:0;"><span style="font-style:italic;">Caring today,</span> <span style="color:var(--um-gold);">leading tomorrow.</span></h2>
+      <p style="color:#dfe6f5; font-size:16px; margin-top:12px; max-width:640px;">
+        Together, we create impact. Together, we inspire hope.
+      </p>
+    </div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap;">
+      <a class="btn-gold" href="study/undergraduate.html"><i class="fa-solid fa-graduation-cap"></i> Apply Now</a>
+      <a class="btn-outline" href="about/index.html">About Us</a>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="assets/site.js"></script>
 </body>
 </html>
