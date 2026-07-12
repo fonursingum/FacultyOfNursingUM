@@ -1,8 +1,18 @@
 /* Faculty of Nursing UM — shared nav/footer injector + interactions */
 (function(){
-  // --- root path so nav works from /, /about/, /study/etc. ---
-  var depth = (window.location.pathname.replace(/\/index\.html$/, '/').split('/').length - 2);
-  var ROOT = depth > 0 ? '../'.repeat(depth) : './';
+  // --- Detect ROOT from the already-resolved CSS link URL. ---
+  // Every page includes <link href="…/assets/site.css">. The browser resolves that
+  // to an absolute URL, so stripping "assets/site.css" gives us the site base —
+  // works whether we're at the domain root (local) or a subpath (GitHub Pages
+  // project site like /FacultyOfNursingUM/).
+  var cssLink = document.querySelector('link[href*="assets/site.css"]');
+  var ROOT = './';
+  if (cssLink){
+    try {
+      var cssPath = new URL(cssLink.href).pathname;
+      ROOT = cssPath.replace(/assets\/site\.css.*$/, '');
+    } catch(e){}
+  }
 
   var NAV = [
     { label: 'Home', href: ROOT + 'index.html' },
@@ -26,13 +36,12 @@
     ]}
   ];
 
-  function currentPath(){ return window.location.pathname.replace(/index\.html$/, ''); }
   function isActive(href){
-    var here = currentPath();
+    if (!href || href === '#') return false;
+    var here = window.location.pathname.replace(/index\.html$/, '');
     var target = href.replace(/index\.html$/, '');
-    if (target === ROOT || target === ROOT + '' ) return here.endsWith('/') && (here === '/' || here.endsWith('/FacultyOfNursingUM/'));
-    var tail = target.replace(/^\.\.\//g,'').replace(/^\.\//,'');
-    return here.indexOf(tail.replace(/\.html$/,'')) !== -1;
+    if (target === ROOT) return here === ROOT;
+    return here.indexOf(target.replace(/\.html$/,'')) === 0;
   }
 
   function renderNav(){
