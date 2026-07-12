@@ -194,10 +194,25 @@
       }
       var prev = document.querySelector('.hero-arrow.prev');
       var next = document.querySelector('.hero-arrow.next');
-      if (prev) prev.addEventListener('click', function(){ go(i-1); });
-      if (next) next.addEventListener('click', function(){ go(i+1); });
-      var timer = setInterval(function(){ go(i+1); }, 5500);
-      track.parentElement.addEventListener('mouseenter', function(){ clearInterval(timer); });
+      var INTERVAL_MS = 4500;
+      var timer = null;
+      function start(){ stop(); timer = setInterval(function(){ go(i+1); }, INTERVAL_MS); }
+      function stop(){ if (timer){ clearInterval(timer); timer = null; } }
+      function restart(){ start(); }
+      if (prev) prev.addEventListener('click', function(){ go(i-1); restart(); });
+      if (next) next.addEventListener('click', function(){ go(i+1); restart(); });
+      Array.prototype.forEach.call(dotsWrap.children, function(dot){
+        dot.addEventListener('click', restart);
+      });
+      // pause on hover, resume when the pointer leaves
+      var hero = track.parentElement;
+      hero.addEventListener('mouseenter', stop);
+      hero.addEventListener('mouseleave', start);
+      // pause when the tab is hidden so we don't drift while backgrounded
+      document.addEventListener('visibilitychange', function(){
+        if (document.hidden) stop(); else start();
+      });
+      start();
     }
   }
 
