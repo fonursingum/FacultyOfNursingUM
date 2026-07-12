@@ -203,7 +203,7 @@
       }
       var prev = document.querySelector('.hero-arrow.prev');
       var next = document.querySelector('.hero-arrow.next');
-      var INTERVAL_MS = 4500;
+      var INTERVAL_MS = 2000;
       var timer = null;
       function start(){ stop(); timer = setInterval(function(){ go(i+1); }, INTERVAL_MS); }
       function stop(){ if (timer){ clearInterval(timer); timer = null; } }
