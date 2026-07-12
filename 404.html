@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page not found | Faculty of Nursing, Universiti Malaya</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="/FacultyOfNursingUM/assets/logo_um.png">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{
+  --um-blue:#002366;
+  --um-blue-2:#001a4d;
+  --um-blue-3:#0b3a8a;
+  --um-gold:#D4A017;
+  --um-gold-2:#B8860B;
+  --um-gold-soft:#F5D488;
+  --paper:#FAF7F2;
+  --white:#ffffff;
+  --ink:#1a2540;
+  --ink-muted:#5b6478;
+  --line:#E5DFCF;
+}
+*{box-sizing:border-box;}
+html,body{margin:0; padding:0;}
+body{
+  font-family:'Inter', system-ui, sans-serif;
+  min-height:100vh;
+  background:linear-gradient(135deg, var(--um-blue) 0%, var(--um-blue-2) 55%, #04143c 100%);
+  color:var(--white);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  display:flex; flex-direction:column;
+}
+.container{max-width:900px; margin:0 auto; padding:0 24px;}
+
+/* Ambient background flourishes */
+body::before,
+body::after{
+  content:""; position:fixed; pointer-events:none; z-index:0;
+}
+body::before{
+  top:-160px; right:-160px; width:520px; height:520px; border-radius:50%;
+  background:radial-gradient(circle, rgba(212,160,23,.18) 0%, transparent 65%);
+}
+body::after{
+  bottom:-200px; left:-200px; width:640px; height:640px; border-radius:50%;
+  background:radial-gradient(circle, rgba(212,160,23,.08) 0%, transparent 65%);
+}
+
+/* Header lockup */
+header{
+  padding:24px 0; position:relative; z-index:2;
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+header .row{display:flex; align-items:center; gap:14px;}
+header img{height:56px; width:auto; object-fit:contain;}
+header .brand{
+  border-left:2px solid var(--um-gold); padding-left:14px; line-height:1.1;
+}
+header .brand .t1{
+  font-family:'Cormorant Garamond', serif; font-size:22px; font-weight:600; color:var(--white);
+}
+header .brand .t2{
+  font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--um-gold-soft); font-weight:600;
+}
+
+/* Main */
+main{
+  flex:1; display:flex; align-items:center; justify-content:center;
+  padding:60px 0; position:relative; z-index:2;
+}
+.card{
+  text-align:center; max-width:720px; margin:0 auto; padding:0 24px;
+}
+.eyebrow{
+  display:inline-block; font-size:12px; letter-spacing:.24em; text-transform:uppercase;
+  font-weight:600; color:var(--um-gold);
+  padding:6px 14px; border:1px solid rgba(212,160,23,.4); border-radius:999px;
+  background:rgba(212,160,23,.06);
+}
+.script{
+  font-family:'Great Vibes', cursive; color:var(--um-gold); font-size:44px;
+  margin:22px 0 -12px; line-height:1;
+}
+.number{
+  font-family:'Cormorant Garamond', serif;
+  font-size:clamp(110px, 22vw, 200px);
+  font-weight:600; line-height:1; letter-spacing:-.02em;
+  background:linear-gradient(135deg, var(--um-gold-soft) 0%, var(--um-gold) 50%, var(--um-gold-2) 100%);
+  -webkit-background-clip:text; background-clip:text;
+  -webkit-text-fill-color:transparent; color:transparent;
+  margin:0 0 6px;
+}
+h1{
+  font-family:'Cormorant Garamond', serif;
+  font-size:clamp(2.2rem, 4vw, 3.2rem);
+  font-weight:600; letter-spacing:-.01em; line-height:1.15;
+  margin:0 0 16px; color:var(--white);
+}
+h1 em{color:var(--um-gold); font-style:italic;}
+p.lead{
+  font-size:17px; line-height:1.75; color:#dfe6f5;
+  margin:0 auto 32px; max-width:520px;
+}
+
+/* Buttons */
+.actions{display:flex; gap:12px; flex-wrap:wrap; justify-content:center;}
+.btn{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:12px 22px; border-radius:999px; font-weight:600; font-size:14px;
+  text-decoration:none; letter-spacing:.02em; transition:all .2s ease;
+  border:2px solid transparent;
+}
+.btn-gold{
+  background:linear-gradient(135deg,var(--um-gold) 0%,var(--um-gold-2) 100%);
+  color:var(--um-blue);
+  box-shadow:0 8px 22px rgba(212,160,23,.35);
+}
+.btn-gold:hover{transform:translateY(-1px); box-shadow:0 12px 28px rgba(212,160,23,.5);}
+.btn-outline{
+  border-color:rgba(255,255,255,.35); color:var(--white); background:transparent;
+}
+.btn-outline:hover{background:var(--white); color:var(--um-blue); border-color:var(--white);}
+
+/* Quick links */
+.quicklinks{
+  margin-top:44px; padding-top:28px;
+  border-top:1px solid rgba(255,255,255,.1);
+  display:flex; gap:10px 26px; flex-wrap:wrap; justify-content:center;
+  font-size:14px;
+}
+.quicklinks a{
+  color:#c9d2e6; text-decoration:none; display:inline-flex; align-items:center; gap:6px;
+  transition:color .2s ease;
+}
+.quicklinks a:hover{color:var(--um-gold-soft);}
+.quicklinks a i{font-size:11px; color:var(--um-gold);}
+
+/* Footer */
+footer{
+  padding:22px 0 28px; text-align:center; position:relative; z-index:2;
+  font-size:12.5px; color:#8892a8;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+footer a{color:var(--um-gold-soft); text-decoration:none;}
+footer .tag{font-family:'Cormorant Garamond', serif; font-style:italic; color:var(--um-gold-soft); margin-top:4px; display:block;}
+
+@media (max-width:600px){
+  header img{height:44px;}
+  header .brand .t1{font-size:18px;}
+  .script{font-size:32px;}
+  .actions{flex-direction:column; align-items:stretch;}
+  .btn{justify-content:center;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <a href="/FacultyOfNursingUM/" class="row" style="text-decoration:none; color:inherit;">
+      <img src="/FacultyOfNursingUM/assets/logo.jpeg" alt="Faculty of Nursing UM">
+      <div class="brand">
+        <div class="t1">Faculty of Nursing</div>
+        <div class="t2">Universiti Malaya</div>
+      </div>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="card">
+    <span class="eyebrow">Page not found</span>
+    <div class="script">Oh dear.</div>
+    <div class="number">404</div>
+    <h1>The page you're looking for <em>doesn't exist.</em></h1>
+    <p class="lead">
+      It may have moved, been retired, or the link that brought you here might be
+      slightly off. Nothing is broken on your end — let's get you back on track.
+    </p>
+
+    <div class="actions">
+      <a class="btn btn-gold" href="/FacultyOfNursingUM/">
+        <i class="fa-solid fa-house"></i> Back to Home
+      </a>
+      <a class="btn btn-outline" href="/FacultyOfNursingUM/about/index.html">
+        <i class="fa-solid fa-people-group"></i> About the Faculty
+      </a>
+      <a class="btn btn-outline" href="mailto:fonadmin@um.edu.my">
+        <i class="fa-regular fa-envelope"></i> Get in touch
+      </a>
+    </div>
+
+    <div class="quicklinks">
+      <a href="/FacultyOfNursingUM/about/vision-mission.html"><i class="fa-solid fa-arrow-right"></i> Vision &amp; Mission</a>
+      <a href="/FacultyOfNursingUM/about/history.html"><i class="fa-solid fa-arrow-right"></i> Our History</a>
+      <a href="/FacultyOfNursingUM/study/index.html"><i class="fa-solid fa-arrow-right"></i> Study</a>
+      <a href="/FacultyOfNursingUM/others/news.html"><i class="fa-solid fa-arrow-right"></i> News</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Faculty of Nursing, Universiti Malaya. All rights reserved.
+    <span class="tag">Caring today, leading tomorrow.</span>
+  </div>
+</footer>
+
+</body>
+</html>
