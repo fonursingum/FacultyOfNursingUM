@@ -165,6 +165,15 @@
       toggle.addEventListener('click', function(){ panel.classList.toggle('open'); });
     }
 
+    // Safety net: any <a href="#"> should be treated as a no-op so it doesn't
+    // scroll to top of page or dirty the URL with a trailing #.
+    document.addEventListener('click', function(e){
+      var a = e.target.closest && e.target.closest('a');
+      if (!a) return;
+      var raw = a.getAttribute('href');
+      if (raw === '#') e.preventDefault();
+    });
+
     // Sticky-nav shadow
     var mainnav = document.getElementById('mainnav');
     if (mainnav){
