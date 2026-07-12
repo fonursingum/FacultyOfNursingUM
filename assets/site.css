@@ -82,6 +82,14 @@ img{max-width:100%; height:auto;}
   opacity:0; pointer-events:none;
   transition:opacity .18s ease, transform .18s ease;
 }
+/* Invisible "hover bridge" over the 14px gap between the parent link and the
+   menu. Without this, moving the mouse across the gap fires mouseleave on the
+   nav-group and the menu closes before it can be reached. */
+.nav-menu::before{
+  content:""; position:absolute;
+  top:-18px; left:-8px; right:-8px; height:18px;
+  background:transparent;
+}
 .nav-group:hover .nav-menu,
 .nav-group:focus-within .nav-menu{
   opacity:1; pointer-events:auto; transform:translateX(-50%) translateY(0);
