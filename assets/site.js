@@ -30,7 +30,7 @@
       { label: 'Medical-Surgical Nursing', href: ROOT + 'department/medical-surgical.html' },
       { label: 'Community & Mental Health Nursing', href: ROOT + 'department/community-mental-health.html' }
     ]},
-    { label: 'Others', href: '#', children: [
+    { label: 'Others', href: ROOT + 'others/events.html', children: [
       { label: 'Events', href: ROOT + 'others/events.html' },
       { label: 'News',   href: ROOT + 'others/news.html' }
     ]}
