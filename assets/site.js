@@ -164,12 +164,43 @@
 
     // Safety net: any <a href="#"> should be treated as a no-op so it doesn't
     // scroll to top of page or dirty the URL with a trailing #.
+    // Also: when a user clicks a mailto: link, copy the address to their
+    // clipboard and show a toast — many browsers/OSes have no default mail
+    // handler, so a plain mailto: click otherwise appears to "do nothing".
     document.addEventListener('click', function(e){
       var a = e.target.closest && e.target.closest('a');
       if (!a) return;
       var raw = a.getAttribute('href');
-      if (raw === '#') e.preventDefault();
+      if (raw === '#') { e.preventDefault(); return; }
+      if (raw && raw.indexOf('mailto:') === 0){
+        var addr = raw.slice(7).split('?')[0];
+        try {
+          if (navigator.clipboard && navigator.clipboard.writeText){
+            navigator.clipboard.writeText(addr);
+          }
+        } catch(err){}
+        showToast('Email copied — ' + addr);
+        // Do NOT preventDefault. If the browser has a mail handler set up,
+        // it will still open the compose window.
+      }
     });
+
+    // Toast helper
+    var toastEl = null, toastTimer = null;
+    function showToast(msg){
+      if (!toastEl){
+        toastEl = document.createElement('div');
+        toastEl.className = 'toast';
+        document.body.appendChild(toastEl);
+      }
+      toastEl.innerHTML = '<i class="fa-solid fa-check"></i> <span>' + msg + '</span>';
+      // reflow → animate in
+      void toastEl.offsetWidth;
+      toastEl.classList.add('show');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 3200);
+    }
+    window.__fonToast = showToast;
 
     // Sticky-nav shadow
     var mainnav = document.getElementById('mainnav');
