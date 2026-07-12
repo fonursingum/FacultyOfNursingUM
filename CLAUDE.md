@@ -110,6 +110,18 @@ assets/
   1. `assets/site.js` top strip — insert a `<span>` after the email span at ~line 78, matching the format that used to be there: `'<span><i class="fa-solid fa-phone" style="margin-right:6px; color:var(--um-gold-soft)"></i> <REAL NUMBER></span>'`
   2. `assets/site.js` footer Connect list — insert an `<li>` after the email `<li>` at ~line 138: `'<li><a href="tel:+<digits>"><REAL NUMBER></a></li>'`
   3. Bump the `?v=N` cache-buster on all HTML files (search-replace `?v=X` → `?v=X+1`).
+- **Study & Department: intentionally hidden from the nav** (2026-07-12). The `study/` and `department/` HTML files are all still on disk — they are just unlinked. When real programme / department content is ready, restore them by:
+  1. `assets/site.js` — re-add the two entries in the `NAV` array between `About` and `Others`. See the commented-out note in `NAV`. Structure was:
+     - Study: children Undergraduate + Postgraduate
+     - Department: children Medical-Surgical Nursing + Community & Mental Health Nursing
+  2. `assets/site.js` — nav CTA `Contact` (`mailto:`) was previously an `Apply Now` button linking to `study/index.html`. Change back if desired.
+  3. `assets/site.js` — footer column is currently titled `Newsroom`. Previously titled `Academic` with links to Undergrad / Postgrad / Departments / Events. Restore the old list if you want an Academic column back.
+  4. `index.html` — the explore-grid currently shows About / Vision & Mission / History / News & Events. The original grid showed Undergrad / Postgrad / Departments / About Us.
+  5. `index.html` — the community tiles were shifted: tile 1 (Nursing Students → study/undergraduate.html) is now Faculty History; tile 3 (Clinical Partners → department/index.html) is now Top Management.
+  6. `index.html` — ribbon CTA is now `Get in touch` (mailto). Previously `Apply Now` linking to `study/undergraduate.html`.
+  7. `about/index.html` — ribbon CTA is now `Get in touch`. Previously `Study with us` linking to `../study/index.html`.
+  8. Cross-links inside `department/medical-surgical.html` and `department/community-mental-health.html` still point at `../study/undergraduate.html` and `../study/postgraduate.html` — no action needed since both groups are hidden together.
+  9. Bump `?v=N` cache-buster on all HTML files.
 - Event dates on `others/events.html` are illustrative — not confirmed events.
 - The 3 later news items on `others/news.html` are illustrative to fill out the grid; the top three (Dean Dialogue, The Star coverage, Establishment letter) are real. Each of the 7 news items has a dedicated detail page under `others/news/`.
 - Department heads TBA.
