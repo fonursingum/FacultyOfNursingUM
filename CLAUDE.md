@@ -123,10 +123,8 @@ assets/
   3. Home page explore-grid — currently shows About / Vision & Mission / History / News & Events. Consider adding a "Departments" card.
   4. Cross-links inside `department/*.html` correctly point at `../study/*.html` and are already live once Department is re-linked.
   5. Bump `?v=N` cache-buster on all HTML files.
-- **Events: replaced with a single "Coming soon" tile** (2026-07-12) because no confirmed events yet. Affects:
-  1. `others/events.html` — 6 event cards replaced with one centred coming-soon card (mailto:fonadmin@um.edu.my?subject=Notify%20me%20about%20FON%20events).
-  2. `index.html` "Upcoming events" section — 3 event cards replaced with the same coming-soon tile; heading `Upcoming events.` kept.
-  When real events exist, restore the 3-card grid pattern using the `.card-grid` layout with each card being an `<a class="news-card">` — see any commit before `[hide-events]` for the previous structure, or use the news cards on `others/news.html` as a template. Bump `?v=N`.
+- **Events on the home page: fully HIDDEN via HTML comment wrapper** (2026-07-12). In `index.html` the entire "Upcoming events" `<section>` sits inside `<!-- HIDE-EVENTS-START ... HIDE-EVENTS-END -->` so the browser doesn't render it. The content is preserved verbatim. **To restore:** open `index.html`, delete the two lines that contain `HIDE-EVENTS-START` and `HIDE-EVENTS-END` (they wrap the section). Bump `?v=N` cache-buster.
+- **Events page (`others/events.html`)** still shows a single "Coming soon" tile with a mailto CTA. When real events exist, restore the 3-card grid pattern using the `.card-grid` layout with each card being an `<a class="news-card">` — use the news cards on `others/news.html` as a template. Bump `?v=N`.
 - The 3 later news items on `others/news.html` are illustrative to fill out the grid; the top three (Dean Dialogue, The Star coverage, Establishment letter) are real. Each of the 7 news items has a dedicated detail page under `others/news/`.
 - Department heads TBA.
 
