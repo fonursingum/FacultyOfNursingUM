@@ -122,7 +122,10 @@ assets/
   7. `about/index.html` — ribbon CTA is now `Get in touch`. Previously `Study with us` linking to `../study/index.html`.
   8. Cross-links inside `department/medical-surgical.html` and `department/community-mental-health.html` still point at `../study/undergraduate.html` and `../study/postgraduate.html` — no action needed since both groups are hidden together.
   9. Bump `?v=N` cache-buster on all HTML files.
-- Event dates on `others/events.html` are illustrative — not confirmed events.
+- **Events: replaced with a single "Coming soon" tile** (2026-07-12) because no confirmed events yet. Affects:
+  1. `others/events.html` — 6 event cards replaced with one centred coming-soon card (mailto:fonadmin@um.edu.my?subject=Notify%20me%20about%20FON%20events).
+  2. `index.html` "Upcoming events" section — 3 event cards replaced with the same coming-soon tile; heading `Upcoming events.` kept.
+  When real events exist, restore the 3-card grid pattern using the `.card-grid` layout with each card being an `<a class="news-card">` — see any commit before `[hide-events]` for the previous structure, or use the news cards on `others/news.html` as a template. Bump `?v=N`.
 - The 3 later news items on `others/news.html` are illustrative to fill out the grid; the top three (Dean Dialogue, The Star coverage, Establishment letter) are real. Each of the 7 news items has a dedicated detail page under `others/news/`.
 - Department heads TBA.
 

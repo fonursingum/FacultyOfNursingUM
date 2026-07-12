@@ -8,7 +8,7 @@
 <link rel="icon" type="image/png" href="assets/logo_um.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=8">
+<link rel="stylesheet" href="assets/site.css?v=9">
 </head>
 <body>
 <div id="site-nav"></div>
@@ -213,50 +213,25 @@
         <span class="eyebrow">What's on</span>
         <h2 class="h-display" style="margin-bottom:0;">Upcoming <span class="accent">events.</span></h2>
       </div>
-      <a href="others/events.html" class="btn-primary">All Events <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="others/events.html" class="btn-primary">Events page <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 
-    <div class="card-grid reveal">
-      <a class="news-card" href="others/events.html">
-        <div class="thumb" style="background:linear-gradient(135deg,var(--um-blue),var(--um-blue-3)); position:relative;">
-          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--um-gold);">
-            <div style="font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:600; line-height:1;">18</div>
-            <div style="font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--white);">Aug 2026</div>
+    <div class="reveal" style="max-width:640px; margin:0 auto;">
+      <a href="mailto:fonadmin@um.edu.my?subject=Notify%20me%20about%20FON%20events" style="display:block; text-decoration:none; color:inherit;">
+        <div style="background:var(--white); border:1px solid var(--line); border-radius:22px; overflow:hidden; box-shadow:0 18px 45px rgba(0,35,102,.1); transition:transform .25s ease;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform='none'">
+          <div style="height:180px; background:linear-gradient(135deg,var(--um-blue),var(--um-blue-3)); display:grid; place-items:center;">
+            <div style="text-align:center; color:var(--um-gold);">
+              <i class="fa-regular fa-calendar-plus" style="font-size:56px; margin-bottom:6px;"></i>
+              <div style="font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--um-gold-soft); font-weight:600;">Watch this space</div>
+            </div>
           </div>
-        </div>
-        <div class="body">
-          <div class="date"><i class="fa-regular fa-clock"></i> 09:00 · Faculty Meeting Room</div>
-          <h3>Inaugural Faculty Town Hall</h3>
-          <p>Vice-Chancellor's address and Q&amp;A with the founding academic team.</p>
-          <span class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a class="news-card" href="others/events.html">
-        <div class="thumb" style="background:linear-gradient(135deg,var(--um-gold-2),var(--um-gold)); position:relative;">
-          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--um-blue);">
-            <div style="font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:600; line-height:1;">05</div>
-            <div style="font-size:14px; letter-spacing:.14em; text-transform:uppercase;">Sep 2026</div>
+          <div style="padding:28px; text-align:center;">
+            <h3 style="font-family:'Cormorant Garamond',serif; font-size:24px; color:var(--um-blue); margin:0 0 10px;">Events coming soon</h3>
+            <p style="color:var(--ink-muted); font-size:14.5px; line-height:1.65; margin:0 0 6px;">
+              Town halls, symposia and workshops will appear here as soon as they are confirmed.
+            </p>
+            <span class="read-more" style="color:var(--um-blue); font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:.08em;">Get notified <i class="fa-solid fa-arrow-right"></i></span>
           </div>
-        </div>
-        <div class="body">
-          <div class="date"><i class="fa-regular fa-clock"></i> 14:00 · UM Auditorium</div>
-          <h3>Nursing Research Symposium 2026</h3>
-          <p>Frontiers in nursing scholarship — panels, poster sessions and keynote talks.</p>
-          <span class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></span>
-        </div>
-      </a>
-      <a class="news-card" href="others/events.html">
-        <div class="thumb" style="background:linear-gradient(135deg,#0a4d55,#0f7d87); position:relative;">
-          <div style="position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; color:var(--um-gold-soft);">
-            <div style="font-family:'Cormorant Garamond',serif; font-size:64px; font-weight:600; line-height:1;">12</div>
-            <div style="font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--white);">Oct 2026</div>
-          </div>
-        </div>
-        <div class="body">
-          <div class="date"><i class="fa-regular fa-clock"></i> 08:30 · Kuala Lumpur</div>
-          <h3>Clinical Skills Bootcamp</h3>
-          <p>Hands-on simulation training led by senior clinical educators.</p>
-          <span class="read-more">Learn more <i class="fa-solid fa-arrow-right"></i></span>
         </div>
       </a>
     </div>
@@ -283,6 +258,6 @@
 </section>
 
 <div id="site-footer"></div>
-<script src="assets/site.js?v=8"></script>
+<script src="assets/site.js?v=9"></script>
 </body>
 </html>
