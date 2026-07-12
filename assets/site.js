@@ -23,8 +23,8 @@
       { label: 'History', href: ROOT + 'about/history.html' }
     ]},
     { label: 'Study', href: ROOT + 'study/index.html', children: [
-      { label: 'Undergraduate — Bachelor of Nursing Science', href: ROOT + 'study/undergraduate.html' },
-      { label: 'Postgraduate — Master of Nursing Science',    href: ROOT + 'study/postgraduate.html' }
+      { label: 'Undergraduate', href: ROOT + 'study/undergraduate.html' },
+      { label: 'Postgraduate',  href: ROOT + 'study/postgraduate.html' }
     ]},
     // NOTE: Department is intentionally hidden from the nav until real department
     // details are ready. Its HTML files still exist in /department but are unlinked.
