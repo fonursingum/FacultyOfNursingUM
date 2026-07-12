@@ -3,11 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Undergraduate | Faculty of Nursing, Universiti Malaya</title>
+<title>Bachelor of Nursing Science | Faculty of Nursing, Universiti Malaya</title>
 <link rel="icon" type="image/png" href="../assets/logo_um.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=9">
+<link rel="stylesheet" href="../assets/site.css?v=10">
+<style>
+.career-chip{
+  background:var(--white); border:1px solid var(--line); border-radius:999px;
+  padding:12px 18px; text-align:center; color:var(--um-blue); font-weight:500; font-size:14px;
+  transition:all .2s ease;
+}
+.career-chip:hover{background:var(--um-blue); color:var(--white); border-color:var(--um-blue);}
+</style>
 </head>
 <body>
 <div id="site-nav"></div>
@@ -15,40 +23,57 @@
 <section class="page-hero">
   <div class="container">
     <div class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Study</a> / Undergraduate</div>
-    <h1>Undergraduate <span class="accent">studies.</span></h1>
-    <p class="lead">A professional Bachelor of Nursing Science degree — grounded in evidence, refined at the bedside.</p>
+    <h1>Bachelor of Nursing <span class="accent">Science.</span></h1>
+    <p class="lead">Our flagship undergraduate degree — a four-year professional programme preparing competent, safe and thoughtful registered nurses.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
+
+    <!-- Overview + fact sheet -->
     <div class="reveal program">
       <div>
-        <span class="eyebrow">Bachelor's</span>
-        <h3>Bachelor of Nursing Science (Hons)</h3>
+        <span class="eyebrow">Bachelor's Degree</span>
+        <h3>Bachelor of Nursing Science</h3>
         <p style="color:var(--ink-muted); font-size:16px; line-height:1.75;">
-          Our flagship undergraduate degree equips students with the clinical judgement, communication and
-          leadership skills required of a modern registered nurse. Learning blends classroom instruction,
-          simulation-based practice and real-world clinical placements from the very first year of study.
+          The programme, offered by the Department of Nursing Sciences (established as a clinical department
+          in 2007 and now under the newly-formed Faculty of Nursing), aims to produce
+          <em>"registered nurses that are competent, safe, has good moral values and critical thinking
+          ability."</em> The curriculum prepares students to
+          <strong style="color:var(--um-blue)">practice nursing critically and ethically</strong> by applying
+          scientific nursing foundations across the full spectrum of healthcare delivery.
         </p>
-        <ul style="color:var(--ink); font-size:15px; line-height:1.9; padding-left:20px; margin:14px 0 0;">
-          <li>Anatomy, physiology and pathophysiology foundations</li>
-          <li>Medical-surgical, community, mental-health and maternal-child nursing</li>
-          <li>Simulation and objective structured clinical examinations (OSCEs)</li>
-          <li>Research methods and evidence-based practice</li>
-          <li>Final-year internship rotations across partner clinical sites</li>
-        </ul>
+        <p style="color:var(--ink-muted); font-size:16px; line-height:1.75; margin-top:12px;">
+          Learning combines classroom instruction, simulation-based practice and immersive clinical
+          placements from the earliest semesters, culminating in a supervised internship in the final year.
+        </p>
       </div>
       <dl class="facts">
-        <dt>Duration</dt><dd>4 Years (Full-time)</dd>
-        <dt>Intake</dt><dd>September 2027 (planned)</dd>
-        <dt>Mode</dt><dd>On-campus + clinical placement</dd>
-        <dt>Award</dt><dd>Bachelor of Nursing Science (Hons)</dd>
-        <dt>Language</dt><dd>English &amp; Bahasa Malaysia</dd>
+        <dt>Duration</dt><dd>4 Years (8 Semesters + 1 Special Semester)</dd>
+        <dt>Mode</dt><dd>Full-time · Coursework</dd>
+        <dt>Intake</dt><dd>Semester 1 (October)</dd>
+        <dt>Award</dt><dd>Bachelor of Nursing Sciences</dd>
       </dl>
     </div>
 
-    <div class="reveal" style="margin-top:60px;">
+    <!-- Fees -->
+    <div class="reveal" style="margin-top:20px;">
+      <div style="background:linear-gradient(135deg,var(--um-blue),var(--um-blue-3)); border-radius:22px; padding:32px 36px; color:var(--white); display:grid; grid-template-columns:1fr 1fr; gap:36px; align-items:center;">
+        <div>
+          <div style="font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--um-gold-soft); font-weight:600; margin-bottom:8px;">Tuition (whole programme)</div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:28px; margin-bottom:4px;">Local <span style="color:var(--um-gold);">RM 136,800</span></div>
+          <div style="font-family:'Cormorant Garamond',serif; font-size:28px;">International <span style="color:var(--um-gold);">RM 149,200</span></div>
+          <div style="font-size:13px; color:#d5deee; margin-top:12px; line-height:1.6;">International fees exclude 6% Sales &amp; Service Tax (SST). Local fees are not applicable for UPU applicants.</div>
+        </div>
+        <div style="text-align:center;">
+          <a class="btn-gold" href="https://apply.um.edu.my" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Apply on apply.um.edu.my</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programme structure -->
+    <div class="reveal" style="margin-top:64px;">
       <div class="section-title" style="margin-bottom:32px;">
         <span class="eyebrow">Programme structure</span>
         <h2 class="h-display">A four-year <span class="accent">journey.</span></h2>
@@ -57,43 +82,154 @@
         <div style="background:var(--paper); border-radius:16px; padding:24px; border-top:4px solid var(--um-blue);">
           <div style="font-family:'Cormorant Garamond',serif; color:var(--um-gold-2); font-size:34px; font-weight:600;">Y1</div>
           <h4 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:20px; margin:4px 0 8px;">Foundations</h4>
-          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Human sciences, nursing fundamentals, first clinical exposure.</p>
+          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Basic Medical Science, Fundamental Nursing, Nursing Skills, Microbiology, Ethics, Communication and Pharmacology.</p>
         </div>
         <div style="background:var(--paper); border-radius:16px; padding:24px; border-top:4px solid var(--um-blue);">
           <div style="font-family:'Cormorant Garamond',serif; color:var(--um-gold-2); font-size:34px; font-weight:600;">Y2</div>
-          <h4 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:20px; margin:4px 0 8px;">Adult &amp; Medical-Surgical</h4>
-          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Medical-surgical nursing, pharmacology, simulation labs.</p>
+          <h4 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:20px; margin:4px 0 8px;">Clinical Sciences</h4>
+          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Medical-Surgical Nursing, Psychology &amp; Sociology, Clinical Practice modules and electives.</p>
         </div>
         <div style="background:var(--paper); border-radius:16px; padding:24px; border-top:4px solid var(--um-blue);">
           <div style="font-family:'Cormorant Garamond',serif; color:var(--um-gold-2); font-size:34px; font-weight:600;">Y3</div>
           <h4 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:20px; margin:4px 0 8px;">Specialty rotations</h4>
-          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Community, mental-health, maternal-child, research project.</p>
+          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Obstetric, Paediatric, Mental Health and Community Health Nursing, plus Research and advanced clinical practice.</p>
         </div>
         <div style="background:var(--paper); border-radius:16px; padding:24px; border-top:4px solid var(--um-gold);">
           <div style="font-family:'Cormorant Garamond',serif; color:var(--um-gold-2); font-size:34px; font-weight:600;">Y4</div>
           <h4 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:20px; margin:4px 0 8px;">Internship &amp; leadership</h4>
-          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Extended clinical internship, leadership elective, capstone.</p>
+          <p style="font-size:14px; color:var(--ink-muted); line-height:1.6; margin:0;">Emergency &amp; Intensive Care, Management, Research Project, Internship and professional practice modules.</p>
         </div>
       </div>
     </div>
 
-    <div class="reveal" style="margin-top:70px; background:var(--paper); border-radius:20px; padding:36px;">
-      <h2 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); margin:0 0 16px;">Entry requirements</h2>
-      <ul style="color:var(--ink); font-size:15.5px; line-height:1.9; padding-left:20px; margin:0;">
-        <li>STPM / Matriculation with credits in Biology, Chemistry and one additional science subject</li>
-        <li>SPM credits in Bahasa Malaysia, English, Mathematics and Science</li>
-        <li>MUET Band 4 or equivalent (English proficiency)</li>
-        <li>Interview and medical fitness screening</li>
-      </ul>
-      <div style="margin-top:22px; display:flex; gap:14px; flex-wrap:wrap;">
-        <a class="btn-primary" href="mailto:fonadmin@um.edu.my"><i class="fa-regular fa-envelope"></i> Enquire</a>
-        <a class="btn-gold" href="postgraduate.html">See Postgraduate</a>
+    <!-- Entry requirements -->
+    <div class="reveal" style="margin-top:70px;">
+      <div class="section-title" style="margin-bottom:32px;">
+        <span class="eyebrow">Entry requirements</span>
+        <h2 class="h-display">Who can <span class="accent">apply.</span></h2>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px;">
+        <div style="background:var(--paper); border-radius:18px; padding:28px; border-top:4px solid var(--um-blue);">
+          <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:24px; margin:0 0 14px;">Local applicants</h3>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">STPM / Matriculation / Foundation / UM SATU</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0 0 14px;">
+            <li>Malaysian citizen</li>
+            <li>Minimum grade B in two subjects: Biology and (Chemistry or Physics)</li>
+            <li>Minimum grade B in two SPM subjects: Science / Biology / Chemistry / Physics AND Mathematics / Additional Mathematics</li>
+            <li>Science stream enrolment</li>
+          </ul>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">Diploma (CGPA ≥ 3.00)</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0 0 14px;">
+            <li>Nursing Diploma from a recognised Malaysian institution</li>
+            <li>Meets the SPM subject requirements above</li>
+          </ul>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">GCE A-Level</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0;">
+            <li>Minimum grade B in three subjects from Biology, Chemistry, Physics, Mathematics</li>
+            <li>Meets the SPM subject requirements above</li>
+          </ul>
+        </div>
+
+        <div style="background:var(--paper); border-radius:18px; padding:28px; border-top:4px solid var(--um-gold);">
+          <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:24px; margin:0 0 14px;">International applicants</h3>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">Senior High School Certificate</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0 0 14px;">
+            <li>Minimum 65% average</li>
+            <li>65% / grade B in Biology &amp; Chemistry</li>
+            <li>65% / grade B in Physics or Mathematics</li>
+            <li>GCSE O-Level or equivalent — minimum C in three relevant subjects</li>
+          </ul>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">Diploma (CGPA ≥ 3.00)</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0 0 14px;">
+            <li>Nursing Diploma from a recognised institution</li>
+            <li>2 years clinical nursing experience</li>
+            <li>Professional registration in country of origin</li>
+            <li>Equivalent secondary qualifications</li>
+          </ul>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">A-Level / IB (≥ 30 pts) / AUSMAT (≥ 80 ATAR)</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0;">
+            <li>Appropriate subject grades (grade B or equivalent)</li>
+            <li>Secondary qualification requirements</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- English requirements -->
+      <div style="background:var(--white); border:1px solid var(--line); border-radius:18px; padding:28px 32px; margin-top:24px;">
+        <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:22px; margin:0 0 14px;">English language requirements</h3>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px;">
+          <div>
+            <div style="font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--um-gold-2); font-weight:700; margin-bottom:8px;">Local</div>
+            <p style="margin:0; color:var(--ink); font-size:14.5px; line-height:1.7;">
+              MUET Band 3.0 — or conditional admission with IELTS 4.5 (Academic) or TOEFL iBT 39,
+              provided MUET is completed within one academic session.
+            </p>
+          </div>
+          <div>
+            <div style="font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--um-gold-2); font-weight:700; margin-bottom:8px;">International</div>
+            <p style="margin:0; color:var(--ink); font-size:14.5px; line-height:1.7;">
+              MUET 4.0 · IELTS (Academic) 6.0 · TOEFL iBT 60 · TOEFL Essentials 8.5 · PTE Academic 59 ·
+              or Cambridge qualifications (B1–C2, minimum 169).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional -->
+      <div style="background:var(--paper); border-left:4px solid var(--um-gold); border-radius:0 14px 14px 0; padding:18px 22px; margin-top:20px;">
+        <p style="margin:0; color:var(--ink); font-size:14.5px; line-height:1.7;">
+          <strong>Health &amp; conduct.</strong> Applicants must be
+          <em>"certified to be in good health without any physical disabilities and mental illnesses"</em>
+          and free from serious infectious diseases or criminal convictions affecting clinical practice.
+          Limited exceptions may apply for correctable physical conditions.
+        </p>
       </div>
     </div>
+
+    <!-- Career prospects -->
+    <div class="reveal" style="margin-top:70px;">
+      <div class="section-title" style="margin-bottom:32px;">
+        <span class="eyebrow">Where our graduates go</span>
+        <h2 class="h-display">Career <span class="accent">prospects.</span></h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px;">
+        <div class="career-chip">Registered Nurse</div>
+        <div class="career-chip">Nurse Educator</div>
+        <div class="career-chip">Clinical Nurse Specialist</div>
+        <div class="career-chip">Public Health Nurse</div>
+        <div class="career-chip">Nurse Researcher</div>
+        <div class="career-chip">Nurse Manager</div>
+        <div class="career-chip">Critical Care Nurse</div>
+        <div class="career-chip">Paediatric Nurse</div>
+        <div class="career-chip">Geriatric Nurse</div>
+        <div class="career-chip">Occupational Health Nurse</div>
+        <div class="career-chip">Community Health Nurse</div>
+        <div class="career-chip">Psychiatric Nurse</div>
+        <div class="career-chip">Midwife</div>
+        <div class="career-chip">Infection Control Nurse</div>
+        <div class="career-chip">Nurse Case Manager</div>
+        <div class="career-chip">Palliative Care Nurse</div>
+        <div class="career-chip">Operating Room Nurse</div>
+        <div class="career-chip">School Health Nurse</div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="reveal" style="margin-top:70px; background:var(--paper); border-radius:20px; padding:36px; text-align:center;">
+      <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:26px; margin:0 0 8px;">Ready to apply?</h3>
+      <p style="color:var(--ink-muted); font-size:15px; max-width:520px; margin:0 auto 22px;">Applications are made through the central UM apply portal. Have a question first? Get in touch with the Faculty.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:center;">
+        <a class="btn-primary" href="https://apply.um.edu.my" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Apply now</a>
+        <a class="btn-gold" href="mailto:fonadmin@um.edu.my"><i class="fa-regular fa-envelope"></i> Enquire</a>
+        <a class="btn-outline" href="postgraduate.html" style="border-color:var(--um-blue); color:var(--um-blue);">See Postgraduate</a>
+      </div>
+    </div>
+
   </div>
 </section>
 
 <div id="site-footer"></div>
-<script src="../assets/site.js?v=9"></script>
+<script src="../assets/site.js?v=10"></script>
 </body>
 </html>

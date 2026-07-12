@@ -22,9 +22,13 @@
       { label: 'Vision & Mission', href: ROOT + 'about/vision-mission.html' },
       { label: 'History', href: ROOT + 'about/history.html' }
     ]},
-    // NOTE: Study and Department are intentionally hidden from the nav until real
-    // programme/department details are ready. Their HTML files still exist in
-    // /study and /department but are unlinked. See CLAUDE.md ("Known placeholders").
+    { label: 'Study', href: ROOT + 'study/index.html', children: [
+      { label: 'Undergraduate — Bachelor of Nursing Science', href: ROOT + 'study/undergraduate.html' },
+      { label: 'Postgraduate — Master of Nursing Science',    href: ROOT + 'study/postgraduate.html' }
+    ]},
+    // NOTE: Department is intentionally hidden from the nav until real department
+    // details are ready. Its HTML files still exist in /department but are unlinked.
+    // See CLAUDE.md ("Known placeholders").
     { label: 'Others', href: ROOT + 'others/events.html', children: [
       { label: 'Events', href: ROOT + 'others/events.html' },
       { label: 'News',   href: ROOT + 'others/news.html' }
@@ -91,10 +95,10 @@
       +     '</a>'
       +     '<div class="nav-links">'
       +       linksHTML
-      +       '<a href="mailto:fonadmin@um.edu.my" class="btn-gold" style="margin-left:8px;"><i class="fa-regular fa-envelope"></i> Contact</a>'
+      +       '<a href="'+ROOT+'study/index.html" class="btn-gold" style="margin-left:8px;"><i class="fa-solid fa-graduation-cap"></i> Apply Now</a>'
       +     '</div>'
       +     '<button class="mobile-toggle" id="mtoggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>'
-      +     '<div class="mobile-panel" id="mpanel">' + mobileHTML + '<a href="mailto:fonadmin@um.edu.my" class="btn-gold" style="margin-top:14px; display:inline-flex;"><i class="fa-regular fa-envelope"></i> Contact</a></div>'
+      +     '<div class="mobile-panel" id="mpanel">' + mobileHTML + '<a href="'+ROOT+'study/index.html" class="btn-gold" style="margin-top:14px; display:inline-flex;"><i class="fa-solid fa-graduation-cap"></i> Apply Now</a></div>'
       +   '</div>'
       + '</nav>';
   }
@@ -119,12 +123,12 @@
       +         '</ul>'
       +       '</div>'
       +       '<div>'
-      +         '<h5>Newsroom</h5>'
+      +         '<h5>Study</h5>'
       +         '<ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:10px;">'
+      +           '<li><a href="'+ROOT+'study/undergraduate.html">Bachelor of Nursing Science</a></li>'
+      +           '<li><a href="'+ROOT+'study/postgraduate.html">Master of Nursing Science</a></li>'
       +           '<li><a href="'+ROOT+'others/news.html">Latest News</a></li>'
-      +           '<li><a href="'+ROOT+'others/events.html">Upcoming Events</a></li>'
-      +           '<li><a href="'+ROOT+'about/meet-our-team.html">Meet Our Team</a></li>'
-      +           '<li><a href="'+ROOT+'about/top-management.html">Leadership</a></li>'
+      +           '<li><a href="'+ROOT+'others/events.html">Events</a></li>'
       +         '</ul>'
       +       '</div>'
       +       '<div>'

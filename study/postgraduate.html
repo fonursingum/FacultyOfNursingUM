@@ -3,11 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Postgraduate | Faculty of Nursing, Universiti Malaya</title>
+<title>Master of Nursing Science | Faculty of Nursing, Universiti Malaya</title>
 <link rel="icon" type="image/png" href="../assets/logo_um.png">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=9">
+<link rel="stylesheet" href="../assets/site.css?v=10">
+<style>
+.career-chip{
+  background:var(--white); border:1px solid var(--line); border-radius:999px;
+  padding:12px 18px; text-align:center; color:var(--um-blue); font-weight:500; font-size:14px;
+  transition:all .2s ease;
+}
+.career-chip:hover{background:var(--um-blue); color:var(--white); border-color:var(--um-blue);}
+.spec-chip{
+  background:linear-gradient(135deg,var(--paper),var(--white)); border:1px solid var(--line);
+  border-radius:12px; padding:14px 16px; color:var(--um-blue); font-weight:600; font-size:14px;
+  display:flex; align-items:center; gap:10px;
+}
+.spec-chip i{color:var(--um-gold-2); font-size:16px;}
+</style>
 </head>
 <body>
 <div id="site-nav"></div>
@@ -15,102 +29,204 @@
 <section class="page-hero">
   <div class="container">
     <div class="crumb"><a href="../index.html">Home</a> / <a href="index.html">Study</a> / Postgraduate</div>
-    <h1>Postgraduate <span class="accent">studies.</span></h1>
-    <p class="lead">Masters and doctoral programmes for nurses ready to specialise, lead, teach and research.</p>
+    <h1>Master of Nursing <span class="accent">Science.</span></h1>
+    <p class="lead">Advanced-practice postgraduate study for nurses ready to specialise, lead, teach and drive evidence-informed practice.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
+
+    <!-- Overview + fact sheet -->
     <div class="reveal program">
       <div>
-        <span class="eyebrow">Coursework</span>
-        <h3>Master of Nursing Science (Advanced Practice)</h3>
+        <span class="eyebrow">Postgraduate · Coursework</span>
+        <h3>Master of Nursing Science (Coursework)</h3>
         <p style="color:var(--ink-muted); font-size:16px; line-height:1.75;">
-          A coursework-and-clinical Master's degree developing advanced practice nurses in medical-surgical,
-          critical care, community and mental-health streams. Coursework, clinical practicum and a
-          research-informed project prepare graduates for expanded clinical roles.
+          The programme <em>"is designed to provide opportunities for nurses to develop advanced skills in
+          professional nursing."</em> Graduates acquire a
+          <strong style="color:var(--um-blue)">rigorous grounding in research methods, critical analysis and
+          theoretical perspectives</strong> that inform clinical nursing, together with competency in
+          research design, critical appraisal and informed decision-making for practice improvement.
+        </p>
+        <p style="color:var(--ink-muted); font-size:16px; line-height:1.75; margin-top:12px;">
+          Structured around 42 credits — <strong>27 core</strong>, <strong>6 elective</strong> and
+          <strong>9 research</strong> — it balances taught modules with a research project of the student's
+          choosing.
         </p>
       </div>
       <dl class="facts">
-        <dt>Duration</dt><dd>2 Years (Full-time)</dd>
-        <dt>Mode</dt><dd>Coursework + clinical practicum</dd>
-        <dt>Streams</dt><dd>Medical-Surgical · Community · Mental Health</dd>
-        <dt>Language</dt><dd>English</dd>
+        <dt>Full-time</dt><dd>2 Semesters + 1 Special Semester</dd>
+        <dt>Part-time</dt><dd>4 Semesters</dd>
+        <dt>Intakes</dt><dd>Semester 1 (October) · Semester 2 (March)</dd>
+        <dt>Award</dt><dd>Master of Nursing Science</dd>
       </dl>
     </div>
 
-    <div class="reveal program">
-      <div>
-        <span class="eyebrow">Coursework</span>
-        <h3>Master of Nursing Education</h3>
-        <p style="color:var(--ink-muted); font-size:16px; line-height:1.75;">
-          Designed for practising nurses moving into teaching, faculty-development and curriculum roles.
-          Modules cover pedagogy, assessment, curriculum design, simulation, digital learning and educational
-          research.
-        </p>
+    <!-- Fees -->
+    <div class="reveal" style="margin-top:20px;">
+      <div style="background:linear-gradient(135deg,var(--um-blue),var(--um-blue-3)); border-radius:22px; padding:32px 36px; color:var(--white);">
+        <div style="font-size:12px; letter-spacing:.2em; text-transform:uppercase; color:var(--um-gold-soft); font-weight:600; margin-bottom:14px;">Tuition (whole programme)</div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px;">
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:22px; margin-bottom:4px;">Local · Full-Time <span style="color:var(--um-gold);">RM 17,700</span></div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:22px;">Local · Part-Time <span style="color:var(--um-gold);">RM 22,300</span></div>
+          </div>
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:22px; margin-bottom:4px;">International · Full-Time <span style="color:var(--um-gold);">RM 31,100</span></div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:22px;">International · Part-Time <span style="color:var(--um-gold);">RM 41,000</span></div>
+          </div>
+        </div>
+        <div style="font-size:13px; color:#d5deee; margin-top:14px; line-height:1.6;">International fees exclude 6% Sales &amp; Service Tax. Fees subject to change.</div>
+        <div style="margin-top:20px;">
+          <a class="btn-gold" href="https://apply.um.edu.my" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Apply on apply.um.edu.my</a>
+        </div>
       </div>
-      <dl class="facts">
-        <dt>Duration</dt><dd>2 Years (Full-time) / 3 Years (Part-time)</dd>
-        <dt>Mode</dt><dd>Coursework</dd>
-        <dt>Award</dt><dd>Master of Nursing Education</dd>
-        <dt>Language</dt><dd>English</dd>
-      </dl>
     </div>
 
-    <div class="reveal program">
-      <div>
-        <span class="eyebrow">Research</span>
-        <h3>Master of Nursing Science (Research)</h3>
-        <p style="color:var(--ink-muted); font-size:16px; line-height:1.75;">
-          A research-only Master's for nurses pursuing scholarship or a foundation for doctoral study.
-          Students propose, conduct and defend an original research project under supervision.
-        </p>
+    <!-- Curriculum -->
+    <div class="reveal" style="margin-top:64px;">
+      <div class="section-title" style="margin-bottom:32px;">
+        <span class="eyebrow">Curriculum</span>
+        <h2 class="h-display">What you <span class="accent">study.</span></h2>
       </div>
-      <dl class="facts">
-        <dt>Duration</dt><dd>2 Years (Full-time)</dd>
-        <dt>Mode</dt><dd>Research thesis</dd>
-        <dt>Award</dt><dd>MSc (Nursing) by research</dd>
-        <dt>Language</dt><dd>English</dd>
-      </dl>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px;">
+        <div style="background:var(--paper); border-radius:18px; padding:26px; border-top:4px solid var(--um-blue);">
+          <div style="font-family:'Cormorant Garamond',serif; color:var(--um-gold-2); font-size:36px; font-weight:600; line-height:1;">27</div>
+          <div style="font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--um-gold-2); font-weight:700; margin-bottom:10px;">Credits</div>
+          <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:22px; margin:0 0 10px;">Core courses</h3>
+          <ul style="font-size:14px; color:var(--ink); line-height:1.8; padding-left:20px; margin:0;">
+            <li>Research Methodology in Nursing</li>
+            <li>Medical Statistics</li>
+            <li>Advanced Health Assessment</li>
+            <li>Contemporary Nursing</li>
+            <li>Health Promotion</li>
+            <li>Nursing Leadership &amp; Healthcare Management</li>
+            <li>Integrated Clinical Decision Making</li>
+            <li>Clinical Teaching</li>
+          </ul>
+        </div>
+        <div style="background:var(--paper); border-radius:18px; padding:26px; border-top:4px solid var(--um-gold);">
+          <div style="font-family:'Cormorant Garamond',serif; color:var(--um-gold-2); font-size:36px; font-weight:600; line-height:1;">6</div>
+          <div style="font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--um-gold-2); font-weight:700; margin-bottom:10px;">Credits · pick one</div>
+          <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:22px; margin:0 0 10px;">Elective — Advanced Nursing Practice</h3>
+          <p style="font-size:14px; color:var(--ink-muted); line-height:1.7; margin:0 0 12px;">Choose one specialisation:</p>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; font-size:13px; color:var(--ink); line-height:1.6;">
+            <div>Gerontology</div>
+            <div>Critical Care</div>
+            <div>Oncology</div>
+            <div>Orthopaedic</div>
+            <div>Emergency &amp; Trauma</div>
+            <div>Mental Health</div>
+            <div>Maternal &amp; Newborn</div>
+            <div>Paediatric</div>
+            <div>Neonatal Care</div>
+            <div>Perioperative</div>
+            <div>Coronary Care</div>
+            <div>Renal</div>
+          </div>
+        </div>
+        <div style="background:var(--paper); border-radius:18px; padding:26px; border-top:4px solid #0f7d87;">
+          <div style="font-family:'Cormorant Garamond',serif; color:var(--um-gold-2); font-size:36px; font-weight:600; line-height:1;">9</div>
+          <div style="font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--um-gold-2); font-weight:700; margin-bottom:10px;">Credits</div>
+          <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:22px; margin:0 0 10px;">Research</h3>
+          <p style="font-size:14px; color:var(--ink); line-height:1.7; margin:0;">
+            An independent <strong>Research Project</strong> — proposal, execution and defence — in an area
+            aligned with your specialty of interest, under academic supervision.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <div class="reveal program">
-      <div>
-        <span class="eyebrow">Doctoral</span>
-        <h3>Doctor of Philosophy (Nursing)</h3>
-        <p style="color:var(--ink-muted); font-size:16px; line-height:1.75;">
-          A research-intensive doctorate producing independent nursing scientists. Focus areas include
-          clinical nursing, health systems, community health, mental-health nursing, education and
-          policy.
-        </p>
+    <!-- Entry requirements -->
+    <div class="reveal" style="margin-top:70px;">
+      <div class="section-title" style="margin-bottom:32px;">
+        <span class="eyebrow">Entry requirements</span>
+        <h2 class="h-display">Who can <span class="accent">apply.</span></h2>
       </div>
-      <dl class="facts">
-        <dt>Duration</dt><dd>3–5 Years</dd>
-        <dt>Mode</dt><dd>Research thesis</dd>
-        <dt>Award</dt><dd>PhD (Nursing)</dd>
-        <dt>Language</dt><dd>English</dd>
-      </dl>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:26px;">
+        <div style="background:var(--paper); border-radius:18px; padding:28px; border-top:4px solid var(--um-blue);">
+          <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:22px; margin:0 0 14px;">Academic</h3>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">CGPA ≥ 3.00</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0 0 14px;">
+            <li>Bachelor's Degree with CGPA ≥ 3.00</li>
+          </ul>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">CGPA 2.50–2.99 (at least one required)</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0 0 14px;">
+            <li>Universiti Malaya graduate</li>
+            <li>Minimum 1 year related work experience</li>
+            <li>Publications in a related field</li>
+            <li>Scholarship recipient</li>
+            <li>Government agency staff member</li>
+            <li>Faculty interview clearance</li>
+            <li>Faculty special evaluation clearance</li>
+          </ul>
+          <p style="font-size:14px; color:var(--ink); font-weight:600; margin:0 0 6px;">Specific qualifications</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.7; padding-left:20px; margin:0;">
+            <li>Bachelor's Degree in Nursing Science, Science (Nursing), Nursing or Health Sciences (Nursing)</li>
+            <li>Malaysian nurses must be registered with the Malaysian Nursing Board <strong>and</strong> hold a current practice licence</li>
+            <li>Post-basic qualification (≥ 6 months) <strong>or</strong> ≥ 1 year related field experience</li>
+          </ul>
+        </div>
+
+        <div style="background:var(--paper); border-radius:18px; padding:28px; border-top:4px solid var(--um-gold);">
+          <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:22px; margin:0 0 14px;">English proficiency</h3>
+          <p style="font-size:14px; color:var(--ink-muted); line-height:1.7; margin:0 0 12px;">One of the following is required:</p>
+          <ul style="font-size:14.5px; color:var(--ink); line-height:1.9; padding-left:20px; margin:0;">
+            <li>MUET Band 4.0</li>
+            <li>IELTS (Academic) Band 6.0</li>
+            <li>TOEFL iBT (Centre-Based) 60</li>
+            <li>TOEFL Essentials (Online) 8.5</li>
+            <li>PTE Academic 59</li>
+            <li>Cambridge qualifications 169</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="reveal" style="margin-top:50px; background:var(--paper); border-radius:20px; padding:36px;">
-      <h2 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); margin:0 0 16px;">General entry requirements</h2>
-      <ul style="color:var(--ink); font-size:15.5px; line-height:1.9; padding-left:20px; margin:0;">
-        <li>Bachelor of Nursing (Hons) or equivalent recognised nursing degree</li>
-        <li>Current registration with the Malaysian Nursing Board (or country equivalent)</li>
-        <li>Minimum of one year post-registration clinical experience</li>
-        <li>IELTS 6.0 / TOEFL 550 or equivalent (for international applicants)</li>
-        <li>Research proposal (for research-track programmes)</li>
-      </ul>
-      <div style="margin-top:22px; display:flex; gap:14px; flex-wrap:wrap;">
-        <a class="btn-primary" href="mailto:fonadmin@um.edu.my"><i class="fa-regular fa-envelope"></i> Enquire</a>
-        <a class="btn-gold" href="undergraduate.html">See Undergraduate</a>
+    <!-- Career prospects -->
+    <div class="reveal" style="margin-top:70px;">
+      <div class="section-title" style="margin-bottom:32px;">
+        <span class="eyebrow">Where our graduates go</span>
+        <h2 class="h-display">Career <span class="accent">prospects.</span></h2>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:12px;">
+        <div class="career-chip">Advanced Practice Nurse</div>
+        <div class="career-chip">Nurse Educator</div>
+        <div class="career-chip">Clinical Nurse Leader</div>
+        <div class="career-chip">Health Promotion Specialist</div>
+        <div class="career-chip">Nurse Manager</div>
+        <div class="career-chip">Nursing Researcher</div>
+        <div class="career-chip">Nurse Practitioner</div>
+        <div class="career-chip">Nursing Consultant</div>
+        <div class="career-chip">Nursing Informatics Specialist</div>
+        <div class="career-chip">Medical Statistics Analyst</div>
+        <div class="career-chip">Health Policy Advisor</div>
+        <div class="career-chip">Advanced Specialty Practitioner</div>
+      </div>
+      <p style="color:var(--ink-muted); font-size:14px; text-align:center; margin-top:18px; line-height:1.7; max-width:720px; margin-left:auto; margin-right:auto;">
+        Specialty routes for advanced practice include Gerontology, Critical Care, Oncology, Orthopaedic,
+        Emergency &amp; Trauma, Mental Health, Maternal &amp; Newborn and Paediatric care.
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <div class="reveal" style="margin-top:70px; background:var(--paper); border-radius:20px; padding:36px; text-align:center;">
+      <h3 style="font-family:'Cormorant Garamond',serif; color:var(--um-blue); font-size:26px; margin:0 0 8px;">Ready to apply?</h3>
+      <p style="color:var(--ink-muted); font-size:15px; max-width:520px; margin:0 auto 22px;">Applications are made through the central UM apply portal. Have a question first? Get in touch with the Faculty.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap; justify-content:center;">
+        <a class="btn-primary" href="https://apply.um.edu.my" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Apply now</a>
+        <a class="btn-gold" href="mailto:fonadmin@um.edu.my"><i class="fa-regular fa-envelope"></i> Enquire</a>
+        <a class="btn-outline" href="undergraduate.html" style="border-color:var(--um-blue); color:var(--um-blue);">See Undergraduate</a>
       </div>
     </div>
+
   </div>
 </section>
 
 <div id="site-footer"></div>
-<script src="../assets/site.js?v=9"></script>
+<script src="../assets/site.js?v=10"></script>
 </body>
 </html>
