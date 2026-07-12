@@ -21,9 +21,11 @@ body{
   color:var(--ink);
   background:var(--white);
   margin:0;
+  overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
   text-rendering:optimizeLegibility;
 }
+img{max-width:100%; height:auto;}
 .font-serif{font-family:'Cormorant Garamond','Playfair Display',serif;}
 .font-script{font-family:'Great Vibes','Allura',cursive;}
 
@@ -334,11 +336,27 @@ body{
   .footer .grid{grid-template-columns:1fr;}
 }
 
-/* Mobile nav */
+/* Mobile safety net — any element using inline grid-template-columns
+   collapses to a single column on narrow viewports. Individual pages
+   set 2-col / 3-col grids inline; without this rule they'd stay
+   multi-column on phones and overflow horizontally. */
+@media (max-width:820px){
+  [style*="grid-template-columns"]{
+    grid-template-columns:1fr !important;
+    gap:24px !important;
+  }
+  .page-hero{padding:96px 0 60px;}
+  .page-hero h1{font-size:2rem;}
+  .h-display{font-size:1.9rem;}
+  .section{padding:56px 0;}
+}
+
+/* Nav layout — desktop */
+.nav-links{display:flex; align-items:center; gap:34px;}
 .mobile-toggle{display:none; background:none; border:none; color:var(--um-blue); font-size:22px; cursor:pointer;}
 .mobile-panel{display:none;}
 @media (max-width:960px){
-  .nav-links{display:none;}
+  .nav-links{display:none !important;}
   .mobile-toggle{display:block;}
   .mobile-panel{display:none; position:absolute; top:100%; left:0; right:0; background:var(--white); border-top:1px solid var(--line); padding:14px 24px 24px; box-shadow:0 20px 40px rgba(0,35,102,.1);}
   .mobile-panel.open{display:block;}

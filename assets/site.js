@@ -95,7 +95,7 @@
       +         '<div style="font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--um-gold-2); font-weight:600;">Universiti Malaya</div>'
       +       '</div>'
       +     '</a>'
-      +     '<div class="nav-links" style="display:flex; align-items:center; gap:34px;">'
+      +     '<div class="nav-links">'
       +       linksHTML
       +       '<a href="'+ROOT+'study/index.html" class="btn-gold" style="margin-left:8px;"><i class="fa-solid fa-graduation-cap"></i> Apply Now</a>'
       +     '</div>'
