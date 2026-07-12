@@ -105,9 +105,13 @@ assets/
 ## Known placeholders (real content pending)
 
 - Team names are "TBA" / "To be announced" throughout `about/top-management.html` and `about/meet-our-team.html` — waiting on real appointments.
-- Contact info: `nursing@um.edu.my` and `+603 7967 XXXX` are placeholders (also flagged in the letter's original web copy).
+- Contact email is **`fonadmin@um.edu.my`** — used in the top strip, footer, department sidebars and every enquiry/mailto link. Update in `assets/site.js` (top strip + footer) and grep for it across HTML if it ever changes again.
+- **Phone number: intentionally hidden.** Removed on 2026-07-12 because there's no real number yet. When a real number is supplied, add it back to:
+  1. `assets/site.js` top strip — insert a `<span>` after the email span at ~line 78, matching the format that used to be there: `'<span><i class="fa-solid fa-phone" style="margin-right:6px; color:var(--um-gold-soft)"></i> <REAL NUMBER></span>'`
+  2. `assets/site.js` footer Connect list — insert an `<li>` after the email `<li>` at ~line 138: `'<li><a href="tel:+<digits>"><REAL NUMBER></a></li>'`
+  3. Bump the `?v=N` cache-buster on all HTML files (search-replace `?v=X` → `?v=X+1`).
 - Event dates on `others/events.html` are illustrative — not confirmed events.
-- The 3 later news items on `others/news.html` are illustrative to fill out the grid; the top three (Dean Dialogue, The Star coverage, Establishment letter) are real.
+- The 3 later news items on `others/news.html` are illustrative to fill out the grid; the top three (Dean Dialogue, The Star coverage, Establishment letter) are real. Each of the 7 news items has a dedicated detail page under `others/news/`.
 - Department heads TBA.
 
 ## Deployment
